@@ -40,22 +40,36 @@ public class No_10828 {
         bw.flush(); bw.close(); br.close();
     }
 
-    private static void push(int[] stack, int value) { stack[++top] = value; }
+    private static void push(int[] stack, int value) { 
+        stack[++top] = value;
+    }
 
-    private static int size() { return top; }
+    private static int size() { 
+        return top; 
+    }
 
     private static int empty() {
-        if (top == 0) { return 1; }
-        else { return 0; }
+        if (top == 0) { 
+            return 1; 
+        }
+        else {
+            return 0;
+        }
     }
 
     private static int top(int[] stack) {
-        if(top != 0) { return stack[top]; }
-        else { return -1; }
+        if(top != 0) {
+            return stack[top];
+        }
+        else {
+            return -1;
+        }
     }
 
     private static int pop(int[] stack) {
-        if (top == 0) { return -1; }
+        if (top == 0) {
+            return -1;
+        }
         return stack[top--];
     }
 }
