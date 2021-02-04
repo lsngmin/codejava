@@ -12,16 +12,15 @@ public class No_10845 {
         public static void main(String[] args) throws IOException {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-            //명령어 개수
+            
             int commandCase = Integer.parseInt(br.readLine());
-            //큐 생성
+            
             Queue<Integer> queue = new LinkedList<>();
 
             int front = 0;
 
             for (int repeat = 0; repeat < commandCase; repeat++) {
                 String command = br.readLine();
-
                 switch (command) {
                     case "front":
                         if (!queue.isEmpty()) {
@@ -61,6 +60,7 @@ public class No_10845 {
                     default:
                         //"push"문자열을 지우고 숫자만 인수로 넣어준다.
                         int num = Integer.parseInt(command.substring(5));
+                                
                         queue.offer(num);
                         front = num;
                 }
