@@ -1,6 +1,8 @@
 /*
 Problem_1929_소수 구하기
 https://www.acmicpc.net/problem/1929
+
+에라토스테네스의 체
  */
 
 import java.io.*;
