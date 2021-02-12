@@ -5,7 +5,6 @@
  자료구조 : Counting Sort
   */
 import java.io.*;
-import java.util.Arrays;
 
  public class No_10989 {
      private static BufferedReader  br = new BufferedReader(new InputStreamReader(System.in));
@@ -20,8 +19,7 @@ import java.util.Arrays;
              array[i] = Integer.parseInt(br.readLine());
          }
 
-         Arrays.sort(array);
-         int[] counting = new int[array[num - 1] + 1];
+         int[] counting = new int[10001];
          // 배열에 원소의 개수 입력
          for (int i = 0; i < array.length; i++) {
              counting[array[i]] += 1;
