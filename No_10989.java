@@ -2,7 +2,7 @@
  Problem_2751_수 정렬하기 3
  https://www.acmicpc.net/problem/10989
 
- 자료구조 : Counting Sort
+ 자료구조 : Counting Sort (계수 정렬)
   */
 import java.io.*;
 
